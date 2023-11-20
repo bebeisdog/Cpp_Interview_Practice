@@ -4,7 +4,7 @@ using namespace std;
 
 int main(){
     int num = 0;
-    int n   = 3; // 設定幾進制
+    int n   = 3; // Define Set Base
     cin >> num;
     vector<int> myarr;
 
@@ -14,7 +14,7 @@ int main(){
         num /= n;
     }
     
-    while(myarr.empty() != true){
+    while(!myarr.empty()){
         cout << myarr.back();
         myarr.pop_back();    
     }

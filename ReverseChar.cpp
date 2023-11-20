@@ -14,7 +14,7 @@ void str_reverse(char* input){
         mystack.push_back(*input);
         input++;
     }
-    while(mystack.empty() != true){
+    while(!mystack.empty()){
         printf("%c", mystack.back());
         mystack.pop_back();
     }
